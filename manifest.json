@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Code Snippets",
+  "version": "1.0",
+  "description": "Display timed code snippets related to the video.",
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/watch?*"],
+      "js": ["highlight.min.js", "content.js"],
+      "css": ["styles.css", "highlight.css"]
+    }
+  ],
+  "permissions": [],
+  "web_accessible_resources": [
+    {
+      "resources": ["highlight.min.js"],
+      "matches": ["*://*/*"]
+    }
+  ]
+}
