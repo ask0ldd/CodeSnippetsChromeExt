@@ -10,7 +10,10 @@
       "css": ["styles.css", "highlight.css"]
     }
   ],
-  "permissions": [],
+  "permissions": ["activeTab", "tabs"],
+  "background": {
+    "service_worker": "service_worker.js"
+  },
   "web_accessible_resources": [
     {
       "resources": ["highlight.min.js"],
